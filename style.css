@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(215, 228, 255);
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  background: #457b9d;
+  text-align: center;
+  width: auto;
+  list-style-type: none;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em 7em;
+  color: #f1faee;
+  font-size: 2em;
+}
+
+.nav-btn {
+  display: inline;
+}
+
+.board-pos {
+  display: flex;
+  justify-content: center;
+  margin-top: 8em;
+}
+
+.board {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+.sqr {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  border: 4px solid #1d3557;
+  border-radius: 0px;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 3em;
+}
+.empty {
+  display: none;
+}
+.x {
+  display: block;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  font-size: 2em;
+  text-align: center;
+}
+
+.x:after {
+  content: "\d7";
+}
+
+.o {
+  display: block;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  font-size: 2em;
+  text-align: center;
+}
+
+.o:after {
+  content: "O";
+}
+
+.sqr1 {
+  border-top-color: rgb(215, 228, 255);
+  border-left-color: rgb(215, 228, 255);
+}
+
+.sqr2 {
+  border-top-color: rgb(215, 228, 255);
+}
+
+.sqr3 {
+  border-top-color: rgb(215, 228, 255);
+  border-right-color: rgb(215, 228, 255);
+}
+
+.sqr4 {
+  border-left-color: rgb(215, 228, 255);
+}
+
+.sqr6 {
+  border-right-color: rgb(215, 228, 255);
+}
+
+.sqr7 {
+  border-left-color: rgb(215, 228, 255);
+  border-bottom-color: rgb(215, 228, 255);
+}
+
+.sqr8 {
+  border-bottom-color: rgb(215, 228, 255);
+}
+
+.sqr9 {
+  border-right-color: rgb(215, 228, 255);
+  border-bottom-color: rgb(215, 228, 255);
+}
