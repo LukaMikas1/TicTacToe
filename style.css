@@ -59,6 +59,11 @@ body {
 .empty {
   display: none;
 }
+
+.hide {
+  display: none;
+}
+
 .x {
   display: block;
   width: 150px;
@@ -123,4 +128,24 @@ body {
 .sqr9 {
   border-right-color: rgb(215, 228, 255);
   border-bottom-color: rgb(215, 228, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .nav-btn a {
+    font-size: 1em;
+  }
+  .sqr {
+    width: 100px;
+    height: 100px;
+  }
+  .o {
+    width: 100px;
+    height: 100px;
+    font-size: 1em;
+  }
+  .x {
+    width: 100px;
+    height: 100px;
+    font-size: 1.5em;
+  }
 }
