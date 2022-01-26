@@ -4,6 +4,49 @@ let playAgain = document.querySelector(".game-over")
 let game = true
 let value = 0
 
+function resetBoard(){
+    // REMOVES X'S AND O'S
+    boxes[0].firstChild.classList.remove("x")
+    boxes[0].firstChild.classList.remove("o")
+    boxes[1].firstChild.classList.remove("x")
+    boxes[1].firstChild.classList.remove("o")
+    boxes[2].firstChild.classList.remove("x")
+    boxes[2].firstChild.classList.remove("o")
+    boxes[3].firstChild.classList.remove("x")
+    boxes[3].firstChild.classList.remove("o")
+    boxes[4].firstChild.classList.remove("x")
+    boxes[4].firstChild.classList.remove("o")
+    boxes[5].firstChild.classList.remove("x")
+    boxes[5].firstChild.classList.remove("o")
+    boxes[6].firstChild.classList.remove("x")
+    boxes[6].firstChild.classList.remove("o")
+    boxes[7].firstChild.classList.remove("x")
+    boxes[7].firstChild.classList.remove("o")
+    boxes[8].firstChild.classList.remove("x")
+    boxes[8].firstChild.classList.remove("o")
+    // ADDS EMPTY CLASS
+    boxes[0].firstChild.classList.add("empty")
+    boxes[1].firstChild.classList.add("empty")
+    boxes[2].firstChild.classList.add("empty")
+    boxes[3].firstChild.classList.add("empty")
+    boxes[4].firstChild.classList.add("empty")
+    boxes[5].firstChild.classList.add("empty")
+    boxes[6].firstChild.classList.add("empty")
+    boxes[7].firstChild.classList.add("empty")
+    boxes[8].firstChild.classList.add("empty")
+    // HIDES PLAY AGAIN BUTTON
+    playAgain.firstChild.classList.add("hide")
+    // REMOVES RED COLOUR
+    boxes[0].firstChild.classList.remove("red")
+    boxes[1].firstChild.classList.remove("red")
+    boxes[2].firstChild.classList.remove("red")
+    boxes[3].firstChild.classList.remove("red")
+    boxes[4].firstChild.classList.remove("red")
+    boxes[5].firstChild.classList.remove("red")
+    boxes[6].firstChild.classList.remove("red")
+    boxes[7].firstChild.classList.remove("red")
+    boxes[8].firstChild.classList.remove("red")
+}
 let isWin = function(){
     for (i = 0; i < 9; i++){
         for(j = 0; j < 9; j++){
@@ -56,8 +99,11 @@ function runGame(){
                     }
                 value++
                 }
-                if(isWin() || isDraw()){
-                    
+                if((isWin()) || (isDraw())){
+                    playAgain.firstChild.classList.remove("hide")
+                    playAgain.addEventListener("click", function(){
+                        resetBoard()
+                    })
                 }
             }))
 }

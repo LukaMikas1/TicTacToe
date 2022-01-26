@@ -34,7 +34,7 @@ body {
 .board-pos {
   display: flex;
   justify-content: center;
-  margin-top: 8em;
+  margin-top: 4em;
 }
 
 .board {
@@ -130,6 +130,23 @@ body {
   border-bottom-color: rgb(215, 228, 255);
 }
 
+.again-btn {
+  position: absolute;
+  top: 25em;
+  right: calc(50% - 100px);
+  font-size: 2em;
+  width: 200px;
+  border: 4px solid #1d3557;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.again-btn:hover {
+  transition: 0.5s;
+  background-color: greenyellow;
+}
+
 @media screen and (max-width: 600px) {
   .nav-btn a {
     font-size: 1em;
@@ -141,12 +158,16 @@ body {
   .o {
     width: 100px;
     height: 100px;
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .x {
     width: 100px;
     height: 100px;
     font-size: 1.5em;
+  }
+  .again-btn {
+    top: 25em;
+    right: 15.5em;
   }
 }
 @media screen and (max-width: 300px) {
@@ -166,5 +187,13 @@ body {
     width: 50px;
     height: 50px;
     font-size: 1em;
+  }
+  .again-btn {
+    border: 2px solid #1d3557;
+    width: auto;
+    height: auto;
+    font-size: 0.5em;
+    top: 50em;
+    right: 14.5em;
   }
 }
