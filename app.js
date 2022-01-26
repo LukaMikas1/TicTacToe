@@ -1,8 +1,8 @@
 let boxes = document.querySelectorAll(".sqr")
-let value = 0
 let test = document.querySelector(".vsbot")
+let playAgain = document.querySelector(".game-over")
 let game = true
-let boxList = []
+let value = 0
 
 let isWin = function(){
     for (i = 0; i < 9; i++){
@@ -56,11 +56,8 @@ function runGame(){
                     }
                 value++
                 }
-                if(isWin()){
-                    console.log(isWin())
-                }
-                if(isDraw()){
-                    console.log(isDraw())
+                if(isWin() || isDraw()){
+                    
                 }
             }))
 }
