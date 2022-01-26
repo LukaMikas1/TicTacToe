@@ -166,34 +166,8 @@ body {
     font-size: 1.5em;
   }
   .again-btn {
-    top: 25em;
-    right: 15.5em;
-  }
-}
-@media screen and (max-width: 300px) {
-  .nav-btn a {
-    font-size: 1em;
-  }
-  .sqr {
-    width: 50px;
-    height: 50px;
-  }
-  .o {
-    width: 50px;
-    height: 50px;
-    font-size: 1em;
-  }
-  .x {
-    width: 50px;
-    height: 50px;
-    font-size: 1em;
-  }
-  .again-btn {
-    border: 2px solid #1d3557;
-    width: auto;
-    height: auto;
-    font-size: 0.5em;
-    top: 50em;
-    right: 14.5em;
+    position: absolute;
+    top: calc(50% - 7.5em);
+    right: (50% - 3em);
   }
 }
