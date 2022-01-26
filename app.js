@@ -46,6 +46,8 @@ function resetBoard(){
     boxes[6].firstChild.classList.remove("red")
     boxes[7].firstChild.classList.remove("red")
     boxes[8].firstChild.classList.remove("red")
+    // VALUE SET TO 0
+    value = 0
 }
 let isWin = function(){
     for (i = 0; i < 9; i++){
