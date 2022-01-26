@@ -85,6 +85,10 @@ body {
   content: "O";
 }
 
+.red {
+  color: red;
+}
+
 .sqr1 {
   border-top-color: rgb(215, 228, 255);
   border-left-color: rgb(215, 228, 255);
