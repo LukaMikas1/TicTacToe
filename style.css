@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+/* // CHECK FOR WINNING MOVE AND DO OK
+    WORKNINGGGGGGGGGGGGGGGGGGGGGGGGG
+    console.log("TWST")
+    for (let i = 0; i < 9; i++){
+        let j = i
+        console.log("1st I " + j)
+        if (boxes[j].firstChild.classList.contains("empty")){
+            boxes[j].firstChild.classList.add("xtemp")
+            if(tempIsWin()){
+                boxes[j].firstChild.classList.add("olet", "o")
+                boxes[j].firstChild.classList.remove("empty")
+                boxes[j].firstChild.classList.remove("xtemp")
+                return
+            }
+            boxes[j].firstChild.classList.remove("xtemp")
+        }
+    }
+    return
+} */
+
 * {
   font-family: "Poppins";
 }
@@ -64,7 +84,7 @@ body {
   display: none;
 }
 
-.x {
+.xlet {
   display: block;
   width: 150px;
   height: 150px;
@@ -73,11 +93,11 @@ body {
   text-align: center;
 }
 
-.x:after {
+.xlet:after {
   content: "\d7";
 }
 
-.o {
+.olet {
   display: block;
   width: 150px;
   height: 150px;
@@ -86,7 +106,7 @@ body {
   text-align: center;
 }
 
-.o:after {
+.olet:after {
   content: "O";
 }
 
@@ -155,12 +175,12 @@ body {
     width: 100px;
     height: 100px;
   }
-  .o {
+  .olet {
     width: 100px;
     height: 100px;
     font-size: 1.5em;
   }
-  .x {
+  .xlet {
     width: 100px;
     height: 100px;
     font-size: 1.5em;
@@ -168,9 +188,6 @@ body {
   .again-btn {
     position: absolute;
     justify-content: center;
-    top: 80%;
-    /* position: absolute;
-    top: calc(50% - 7.5em);
-    right: (50% - 3em); */
+    top: 85%;
   }
 }
